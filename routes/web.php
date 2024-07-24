@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\principalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,3 @@ Route::get('/principal', [loginController::class, 'principal'])->middleware('aut
 
 Route::post('/register', [loginController::class, 'register']);
 Route::post('/login', [loginController::class, 'login']);
-

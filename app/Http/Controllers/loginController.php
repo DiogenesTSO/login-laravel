@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -20,7 +21,9 @@ class loginController extends Controller
 
         //Abre o a página principal
     public function principal(){
-        return view('principal');
+        $users = User::all();
+
+        return view('principal', compact('users'));
     }
 
         //Cadastrar novos usuários na tabela users
