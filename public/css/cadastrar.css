@@ -1,0 +1,33 @@
+body {
+    background-color:rgb(94, 94, 94);
+}
+
+.container {
+    margin-right: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #a7eb87;
+}
+
+.was-validated {
+    width: 50%;
+    margin: auto;
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+}
+
+.btn {
+    margin-top: 1.5rem;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.alert-success {
+    margin-top: 1.0rem;
+}

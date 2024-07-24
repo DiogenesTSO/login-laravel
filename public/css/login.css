@@ -1,0 +1,42 @@
+body {
+    background-color:rgb(94, 94, 94);
+}
+
+.container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    margin-left: 0;
+    background: #a7eb87;
+    
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 1.0rem;
+}
+
+.forgot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+
+.alert-danger {
+    width: 140%;
+    margin-top: 1.0rem;
+    margin-left: -20%;
+    padding: 1rem 1rem;
+}
