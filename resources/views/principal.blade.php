@@ -26,10 +26,10 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                            <a class="nav-link active" aria-current="page" href="">Principal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Lista de Usuários</a>
+                            <a class="nav-link" href="" id="load-user">Lista de Usuários</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Configurações</a>
@@ -40,45 +40,14 @@
         </div>
     </nav>
 
-<!--
-    <div class="offcanvas offcanvas-start" id="demo">
-        <div class="offcanvas-header">
-            <h1 class="offcanvas-title">Cabeçalho</h1>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body">
-            <p>teste 1</p>
-            <button type="button" class="btn btn-secondary"> a button</button>
-        </div>
-    </div>
-
-    <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#demo"> open</button>
--->
     <div class="container mt-5">
-        <h1 class="mb-4" style="text-align: center;">Lista de Usuários</h1>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Email</th>
-                <th scope="col">Data Criação</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($users as $user)
-                <tr>
-                <td>{{ $user->id }}</td>
-                <td>{{ $user->name }}</td>
-                <td>{{ $user->email }}</td>
-                <td>{{ $user->created_at }}</td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
+        <div id="lista-usuarios">
+            <!-- A lista será carregada aqui!-->
+        </div>
     </div>
 
-
+    <script src="js/principal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     

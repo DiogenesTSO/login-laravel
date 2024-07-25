@@ -21,9 +21,7 @@ class loginController extends Controller
 
         //Abre o a página principal
     public function principal(){
-        $users = User::all();
-
-        return view('principal', compact('users'));
+        return view('principal');
     }
 
         //Cadastrar novos usuários na tabela users

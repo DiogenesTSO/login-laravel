@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [loginController::class, 'showLogin']);
 Route::get('/register', [loginController::class, 'showRegistro']);
 Route::get('/principal', [loginController::class, 'principal'])->middleware('auth');
+Route::get('/lista-usuarios', [principalController::class, 'getUsers']);
 
 Route::post('/register', [loginController::class, 'register']);
 Route::post('/login', [loginController::class, 'login']);
