@@ -20,6 +20,7 @@ Route::get('/', [loginController::class, 'showLogin']);
 Route::get('/register', [loginController::class, 'showRegistro']);
 Route::get('/principal', [loginController::class, 'principal'])->middleware('auth');
 Route::get('/lista-usuarios', [principalController::class, 'getUsers']);
+Route::get('/edit/{id}', [principalController::class, 'edit'])->name('edit');
 
 Route::post('/register', [loginController::class, 'register']);
 Route::post('/login', [loginController::class, 'login']);
