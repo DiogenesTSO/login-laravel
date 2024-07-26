@@ -22,5 +22,7 @@ Route::get('/principal', [loginController::class, 'principal'])->middleware('aut
 Route::get('/lista-usuarios', [principalController::class, 'getUsers']);
 Route::get('/edit/{id}', [principalController::class, 'edit'])->name('edit');
 
+Route::put('/users/{id}', [principalController::class, 'update']);
+
 Route::post('/register', [loginController::class, 'register']);
 Route::post('/login', [loginController::class, 'login']);
